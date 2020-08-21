@@ -5,11 +5,11 @@ body{
 }
 hr{
     /* make seperator width at 60 of visable width */
-    width: 60vw;
+    width: 95vw;
 }
 p,ul,ol{
     /* adjust font & spacing of paragraphs */
-    margin: 1.5% 25%;
+    margin: 1.5% 5%;
     text-align: left;
     font-size: 1.05rem;
 }
@@ -60,5 +60,14 @@ a:active{
     }
     to {
       transform: rotate(359deg);
+    }
+  }
+
+  @media all and (min-width: 800px){
+    p,ul,ol{
+        margin: 1.5% 25%;
+    }
+    hr{
+        width: 60vw;
     }
   }
