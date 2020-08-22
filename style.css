@@ -38,6 +38,7 @@ img {
 }
 
 #intro img {
+    height: 10%;
     padding: 0.5%;
     /* add animation and make it circular */
     animation: rotation 15s infinite linear;
