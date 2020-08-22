@@ -1,73 +1,114 @@
-body{
+body {
     /* make body margin 0 to make sure no gaps in layout & add color */
     margin: 0;
     background: rgb(137, 166, 172);
 }
-hr{
-    /* make seperator width at 60 of visable width */
-    width: 95vw;
-}
-p,ul,ol{
+
+p, ul, ol, li {
     /* adjust font & spacing of paragraphs */
-    margin: 1.5% 5%;
     text-align: left;
-    font-size: 1.05rem;
+    color: #ffffff;
 }
-header,footer{
+
+header, footer {
     /* add color and add border to prevent gaps */
     background-color: #0292af;
     border: solid;
     border-color: #0292af;
 }
-h1,h2,h3,h4{
+
+h1, h2, h3, h4 {
     /* adjust font & alignment of headers */
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: oblique;
 }
-img{
+
+section {
+    padding: 0.5%;
+}
+
+img {
     /* center image & adjust image size */
-    height: 40vh;
     margin-left: auto;
     margin-right: auto;
-    padding: 0.5%;
     display: block;
     /* add max so image doesn't overflow */
-    max-width: 90vw;
+    max-width: 90%;
+}
+
+#intro img {
+    padding: 0.5%;
     /* add animation and make it circular */
     animation: rotation 15s infinite linear;
     border-radius: 50%;
 }
-p,li{
-    color: #ffffff;
+
+#projects img {
+    border-radius: 2%;
 }
-a:link{
+
+header>h1, header>h3, footer>h4 {
+    margin: 0;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+}
+
+.item {
+    flex: 1;
+}
+
+.align-with-image {
+    max-width: 90%;
+    margin: auto;
+}
+
+a:link {
     color: rgb(44, 23, 23);
 }
-a:visited{
+
+a:visited {
     color: rgb(175, 23, 23);
 }
-a:hover{
+
+a:hover {
     color: rgb(125, 23, 23);
 }
-a:active{
+
+a:active {
     color: rgb(245, 23, 23);
 }
+
+.bg-contrast {
+    background-color: #0598b6;
+}
+
+.left-align {
+    text-align: left;
+}
+
 /* define animation as rotating in full circle */
+
 @keyframes rotation {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-      transform: rotate(359deg);
+        transform: rotate(359deg);
     }
-  }
+}
 
-  @media all and (min-width: 800px){
-    p,ul,ol{
-        margin: 1.5% 25%;
+@media all and (min-width: 768px) {
+    .group {
+        flex-direction: row;
+        width: 80%;
     }
-    hr{
-        width: 60vw;
+    #intro .group .item {
+        height: 80%;
     }
-  }
+}
