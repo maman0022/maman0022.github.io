@@ -40,6 +40,7 @@ img {
 #intro img {
     padding: 0.5%;
     /* add animation and make it circular */
+    animation: rotation 15s infinite linear;
     border-radius: 50%;
 }
 
