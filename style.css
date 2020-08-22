@@ -52,6 +52,12 @@ img {
     margin: 0;
 }
 
+.github-logo {
+    height: 1.25rem;
+    float: right;
+    padding-right: 10%;
+}
+
 .zero-bottom-margin {
     margin-bottom: 0;
 }
