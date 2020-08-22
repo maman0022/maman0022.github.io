@@ -38,10 +38,8 @@ img {
 }
 
 #intro img {
-    height: 10%;
     padding: 0.5%;
     /* add animation and make it circular */
-    animation: rotation 15s infinite linear;
     border-radius: 50%;
 }
 
@@ -49,8 +47,12 @@ img {
     border-radius: 2%;
 }
 
-header>h1, header>h3, footer>h4 {
+.zero-margin {
     margin: 0;
+}
+
+.zero-bottom-margin {
+    margin-bottom: 0;
 }
 
 .group {
