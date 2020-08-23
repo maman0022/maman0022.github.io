@@ -38,7 +38,6 @@ img {
 }
 
 #intro img {
-    padding: 0.5%;
     /* add animation and make it circular */
     animation: rotation 15s infinite linear;
     border-radius: 50%;
@@ -53,9 +52,16 @@ img {
 }
 
 .github-logo {
-    height: 1.25rem;
-    float: right;
-    padding-right: 10%;
+    height: 1.25em;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+}
+
+.project-title-header {
+    flex-basis: 75%;
 }
 
 .zero-bottom-margin {
@@ -74,7 +80,7 @@ img {
 }
 
 .align-with-image {
-    max-width: 90%;
+    max-width: 86%;
     margin: auto;
 }
 
@@ -100,6 +106,10 @@ a:active {
 
 .left-align {
     text-align: left;
+}
+
+#intro .group {
+    align-items: center;
 }
 
 /* define animation as rotating in full circle */
