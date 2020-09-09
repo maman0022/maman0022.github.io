@@ -1,134 +1,175 @@
 body {
-    /* make body margin 0 to make sure no gaps in layout & add color */
-    margin: 0;
-    background: rgb(137, 166, 172);
+  /* make body margin 0 to make sure no gaps in layout & add color */
+  margin: 0;
+  background: rgb(137, 166, 172);
 }
 
 p, ul, ol, li {
-    /* adjust font & spacing of paragraphs */
-    text-align: left;
-    color: #ffffff;
+  /* adjust font & spacing of paragraphs */
+  text-align: left;
+  color: #ffffff;
 }
 
 header, footer {
-    /* add color and add border to prevent gaps */
-    background-color: #0292af;
-    border: solid;
-    border-color: #0292af;
+  /* add color and add border to prevent gaps */
+  background-color: #0292af;
+  border: solid;
+  border-color: #0292af;
 }
 
 h1, h2, h3, h4 {
-    /* adjust font & alignment of headers */
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-style: oblique;
+  /* adjust font & alignment of headers */
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: oblique;
 }
 
 section {
-    padding: 0.5%;
+  padding: 0.5%;
 }
 
 img {
-    /* center image & adjust image size */
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    /* add max so image doesn't overflow */
-    max-width: 90%;
+  /* center image & adjust image size */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* add max so image doesn't overflow */
+  max-width: 90%;
 }
 
 #intro img {
-    /* add animation and make it circular */
-    animation: rotation 15s infinite linear;
-    border-radius: 50%;
+  /* add animation and make it circular */
+  animation: rotation 15s infinite linear;
+  border-radius: 50%;
 }
 
 #projects img {
-    border-radius: 2%;
+  border-radius: 2%;
 }
 
 .zero-margin {
-    margin: 0;
+  margin: 0;
 }
 
 .github-logo {
-    height: 1.25em;
+  height: 1.25em;
 }
 
 .project-title {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .project-title-header {
-    flex-basis: 75%;
+  flex-basis: 75%;
 }
 
 .zero-bottom-margin {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .group {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
 }
 
 .item {
-    flex: 1;
+  flex: 1;
 }
 
 .align-with-image {
-    max-width: 86%;
-    margin: auto;
+  max-width: 86%;
+  margin: auto;
 }
 
 a:link {
-    color: rgb(44, 23, 23);
+  color: rgb(44, 23, 23);
 }
 
 a:visited {
-    color: rgb(175, 23, 23);
+  color: rgb(175, 23, 23);
 }
 
 a:hover {
-    color: rgb(125, 23, 23);
+  color: rgb(125, 23, 23);
 }
 
 a:active {
-    color: rgb(245, 23, 23);
+  color: rgb(245, 23, 23);
 }
 
 .bg-contrast {
-    background-color: #0598b6;
+  background-color: #0598b6;
 }
 
 .left-align {
-    text-align: left;
+  text-align: left;
 }
 
 #intro .group {
-    align-items: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav>ul {
+  display: flex;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+nav li h1, nav li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav li h1 {
+  font-size: 1em;
+}
+
+nav li {
+  margin: 0.2em auto;
+  list-style: none;
 }
 
 /* define animation as rotating in full circle */
 
 @keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
-@media all and (min-width: 768px) {
-    .group {
-        flex-direction: row;
-        width: 80%;
-    }
-    #intro .group .item {
-        height: 80%;
-    }
+@media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
+    width: 80%;
+  }
+  #intro .group .item {
+    height: 80%;
+  }
+
+  nav{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav>h1{
+    padding-left: 0.5em;
+  }
+  nav>ul{
+  flex: 0.75;
+  }
+
+  nav li h1 {
+    font-size: 1.5em;
+  }
 }
+
