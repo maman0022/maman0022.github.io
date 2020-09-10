@@ -37,6 +37,10 @@ img {
   max-width: 90%;
 }
 
+#intro{
+  overflow: hidden;
+}
+
 #intro img {
   /* add animation and make it circular */
   animation: rotation 15s infinite linear;
@@ -135,6 +139,25 @@ nav li h1 {
 nav li {
   margin: 0.2em auto;
   list-style: none;
+}
+
+form label{
+  display: block;
+  margin-top: 1em;
+  color: #ffffff;
+}
+form{
+  padding-left: 1em;
+}
+
+form textarea,form input{
+  width: 100%;
+  max-width: 40ch;
+}
+
+form input[type=submit]{
+  margin: 0.3em 0;
+  display: block;
 }
 
 /* define animation as rotating in full circle */
