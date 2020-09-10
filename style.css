@@ -37,7 +37,7 @@ img {
   max-width: 90%;
 }
 
-#intro{
+#intro {
   overflow: hidden;
 }
 
@@ -141,21 +141,22 @@ nav li {
   list-style: none;
 }
 
-form label{
+form label {
   display: block;
   margin-top: 1em;
   color: #ffffff;
 }
-form{
+
+form {
   padding-left: 1em;
 }
 
-form textarea,form input{
+form textarea, form input {
   width: 100%;
   max-width: 40ch;
 }
 
-form input[type=submit]{
+form input[type=submit] {
   margin: 0.3em 0;
   display: block;
 }
@@ -179,20 +180,17 @@ form input[type=submit]{
   #intro .group .item {
     height: 80%;
   }
-
-  nav{
+  nav {
     flex-direction: row;
     justify-content: space-between;
   }
-  nav>h1{
+  nav>h1 {
     padding-left: 0.5em;
   }
-  nav>ul{
-  flex: 0.75;
+  nav>ul {
+    flex: 0.75;
   }
-
   nav li h1 {
     font-size: 1.5em;
   }
 }
-
