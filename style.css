@@ -152,8 +152,8 @@ form {
 }
 
 form textarea, form input {
-  width: 100%;
-  max-width: 25ch;
+  width: 90%;
+  max-width: 40ch;
 }
 
 form input[type=submit] {
@@ -192,8 +192,5 @@ form input[type=submit] {
   }
   nav li h1 {
     font-size: 1.5em;
-  }
-  form textarea, form input {
-    max-width: 40ch;
   }
 }
