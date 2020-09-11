@@ -1,7 +1,7 @@
 body {
   /* make body margin 0 to make sure no gaps in layout & add color */
   margin: 0;
-  background: rgb(137, 166, 172);
+  background: #5B7B80;
 }
 
 p, ul, ol, li {
@@ -17,7 +17,13 @@ header, footer {
   border-color: #0292af;
 }
 
-h1, h2, h3, h4 {
+footer>p {
+  font-size: 1em;
+  font-weight: bold;
+  color: #000;
+}
+
+h1, h2, h3, h4, footer>p {
   /* adjust font & alignment of headers */
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -56,16 +62,18 @@ img {
 }
 
 .github-logo {
-  height: 1.25em;
+  height: 1.5em;
 }
 
 .project-title {
   display: flex;
   align-items: center;
+  align-items: flex-end;
 }
 
 .project-title-header {
   flex-basis: 75%;
+  margin-bottom: 0;
 }
 
 .zero-bottom-margin {
@@ -105,7 +113,7 @@ a:active {
 }
 
 .bg-contrast {
-  background-color: #0598b6;
+  background-color: #0381A0;
 }
 
 .left-align {
