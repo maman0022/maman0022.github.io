@@ -161,6 +161,12 @@ form input[type=submit] {
   display: block;
 }
 
+.tech-header {
+  color: #ffffff;
+  margin: 0 auto;
+  font-style: normal;
+}
+
 /* define animation as rotating in full circle */
 
 @keyframes rotation {
