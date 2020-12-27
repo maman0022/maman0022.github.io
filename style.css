@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 section {
   padding: 0 5%;
   min-height: 100vh;
@@ -17,12 +21,20 @@ h1, h2, h3, h4 {
   margin-bottom: 0;
 }
 
-.bg-contrast {
-  background-color: #0381A0;
+.item {
+  flex: 1;
 }
 
-* {
-  box-sizing: border-box;
+.group {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+@media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
+  }
 }
 
 /* header ----------------------------------------------------------------------------------------------------*/
@@ -39,7 +51,7 @@ header {
 
 /* outer space --------------------------------------------------------------------------------------------*/
 
-section#outer-space {
+#outer-space {
   background: url('./images/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -140,7 +152,23 @@ section#outer-space {
   z-index: 1;
 }
 
+/* About ----------------------------------------------------------------------------------------------------*/
+
+#about {
+  background-color: antiquewhite;
+}
+
+#about p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  margin: 1.1em auto;
+}
+
 /* Projects ------------------------------------------------------------------------------------------------*/
+
+#projects {
+  background-color: #F5971D;
+}
 
 #projects img {
   border-radius: 2%;
@@ -162,16 +190,29 @@ section#outer-space {
   text-align: left;
 }
 
+.project-title {
+  display: flex;
+  align-items: flex-end;
+}
+
 .github-logo {
   height: 1.5em;
 }
 
+.tech-header {
+  margin: 0 auto;
+  font-style: normal;
+}
+
 /* Contact ------------------------------------------------------------------------------------------*/
+
+#contact {
+  background-color: antiquewhite;
+}
 
 ul, li {
   /* adjust font & spacing of paragraphs */
   text-align: left;
-  color: #ffffff;
 }
 
 form {
@@ -181,7 +222,6 @@ form {
 form label {
   display: block;
   margin-top: 1em;
-  color: #ffffff;
 }
 
 form textarea, form input {
@@ -196,7 +236,6 @@ form input[type=submit] {
 
 footer {
   /* add color and add border to prevent gaps */
-  background-color: #0292af;
-  border: solid;
-  border-color: #0292af;
+  background-color: #F5971D;
+  border: none;
 }
