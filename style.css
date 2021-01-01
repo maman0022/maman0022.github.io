@@ -241,9 +241,3 @@ form input[type=submit] {
   margin: 0.3em 0;
   display: block;
 }
-
-footer {
-  /* add color and add border to prevent gaps */
-  background-color: #F5971D;
-  border: none;
-}
