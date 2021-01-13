@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -29,11 +30,16 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   margin: auto;
+  justify-content: center;
 }
 
 @media all and (min-width: 800px) {
   .group {
-    flex-direction: row;
+    flex-flow: row wrap;
+  }
+  .item {
+    min-width: 34%;
+    max-width: 50%;
   }
   section {
     padding: 0 10%;
@@ -43,6 +49,7 @@ h1, h2, h3, h4 {
 /* header ----------------------------------------------------------------------------------------------------*/
 
 header {
+  padding-top: 1em;
   position: absolute;
 }
 
@@ -175,7 +182,12 @@ header h2 {
 /* Projects ------------------------------------------------------------------------------------------------*/
 
 #projects {
-  background-color: #F5971D;
+  background-color: #f8d5a7;
+}
+
+#projects p {
+  font-family: 'roboto mono', monospace;
+  font-weight: normal;
 }
 
 #projects img {
@@ -216,6 +228,12 @@ header h2 {
 
 #contact {
   background-color: antiquewhite;
+}
+
+#contact p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  margin: 1.1em auto;
 }
 
 ul, li {
