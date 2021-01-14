@@ -50,12 +50,15 @@ h1, h2, h3, h4 {
 
 header {
   padding-top: 1em;
-  position: absolute;
 }
 
 header h2 {
   color: #ffffff;
   background-color: transparent;
+}
+
+header h2:hover {
+  text-decoration: underline;
 }
 
 #nav-link1, #nav-link2, #nav-link3 {
@@ -71,7 +74,6 @@ header h2 {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  padding-top: 5.5rem;
   height: 100vh;
 }
 
@@ -80,7 +82,7 @@ header h2 {
   letter-spacing: 0.1em;
   font-size: 1em;
   mix-blend-mode: difference;
-  margin-top: 0.2em;
+  margin-top: 1em;
   text-align: center;
   color: #ffffff;
 }
