@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 * {
   box-sizing: border-box;
+  line-height: 1.5em;
 }
 
 section {
@@ -50,7 +51,7 @@ h1, h2, h3, h4 {
 
 header {
   padding-top: 1em;
-  z-index: 10;
+  z-index: 11;
 }
 
 header h2 {
