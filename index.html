@@ -22,8 +22,9 @@
 
   <main class="flex-column">
     <section id="outer-space" class="flex-column align-center">
+      <!-- put header in section so it will have same background image -->
       <header class="full-width">
-        <nav class="full-width flex-row justify-evenly flex-wrap">
+        <nav class="full-width flex-row justify-around flex-wrap">
           <a href="#about" id="nav-link1">
             <h2 class="zero-margin">About</h2>
           </a>
@@ -46,16 +47,27 @@
       <div class="overlay overlay-9" data-counter="5"></div>
       <div class="overlay overlay-10" data-counter="1"></div>
       <p id="warning">WARNING! Do not go near this monster</p>
+      <p id="warning-2">Scroll down very carefully</p>
       <div class="downarrows-container">
-        <img src="images/down-arrow.svg" alt="animated down arrow pointer" class="downarrow downarrow-1">
-        <img src="images/down-arrow.svg" alt="animated down arrow pointer" class="downarrow downarrow-2">
+        <img src="images/outer-space/down-arrow.svg" alt="animated down arrow pointer" class="downarrow downarrow-1">
+        <img src="images/outer-space/down-arrow.svg" alt="animated down arrow pointer" class="downarrow downarrow-2">
       </div>
-      <img src="images/smoke.jpg" alt="" id="spinner">
+      <img src="images/outer-space/smoke.jpg" alt="" id="spinner">
     </section>
     <section id="about">
       <h2>Hi, I'm Muhammad</h2>
       <p>I'm a full-stack engineer based in Houston, Texas. I have experience in HTML5, CSS3,
         JavaScript, and React on the front-end, PostgreSQL, Express, Knex, and Node on the back-end.</p>
+        <div id="stack-container" class="flex-row flex-wrap justify-center full-width">
+          <img class="stack-image" src="images/about/html.svg" alt="">
+          <img class="stack-image" src="images/about/css.png" alt="">
+          <img class="stack-image" src="images/about/js.png" alt="">
+          <img class="stack-image" src="images/about/react.png" alt="">
+          <img class="stack-image" src="images/about/postgresql.png" alt="">
+          <img class="stack-image" src="images/about/express.png" alt="">
+          <img class="stack-image" src="images/about/knex.png" alt="">
+          <img class="stack-image" src="images/about/node.svg" alt="">
+        </div>
       <p>I have been coding since middle school. Much of the coding knowledge I have, I acquired from the web. I believe
         that the best part of the web is the amount of the knowledge that is stored there.</p>
       <p>I want to contribute to this and collaborate with others to create apps that allow people to acquire this
@@ -70,14 +82,14 @@
       <h2>Projects</h2>
       <div class="group">
         <div class="item">
-          <img src="images/bandwidth.jpg" alt="screenshot of bandwidth app">
+          <img src="images/projects/bandwidth.jpg" alt="screenshot of bandwidth app">
           <div class="align-with-image">
             <div class="flex-row align-end">
               <h3 class="project-title-header zero-bottom-margin"><a href="https://bandwidth-saver.vercel.app"
                   target="_blank">Bandwidth Saver</a>
               </h3>
               <a href="https://github.com/maman0022/bandwidth-saver-client" target="_blank"><img class="github-logo"
-                  src='images/github.svg' alt="github logo with link that navigates to bandwidth saver github page"></a>
+                  src='images/projects/github.svg' alt="github logo with link that navigates to bandwidth saver github page"></a>
             </div>
             <p>A full-stack app that allows users to upload any public link on the internet directly to their Dropbox or
               OneDrive accounts.</p>
@@ -87,14 +99,14 @@
           </div>
         </div>
         <div class="item">
-          <img src="images/coolschool.jpg" alt="screenshot of coolschool app">
+          <img src="images/projects/coolschool.jpg" alt="screenshot of coolschool app">
           <div class="align-with-image">
             <div class="flex-row align-end">
               <h3 class="project-title-header zero-bottom-margin"><a href="https://coolschool.vercel.app"
                   target="_blank">CoolSchool</a>
               </h3>
               <a href="https://github.com/maman0022/coolschool-client" target="_blank"><img class="github-logo"
-                  src='images/github.svg' alt="github logo with link that navigates to coolschool github page"></a>
+                  src='images/projects/github.svg' alt="github logo with link that navigates to coolschool github page"></a>
             </div>
             <p>A full-stack course management app that allows students to organize their
               notes and essays by the courses they are taking.</p>
@@ -104,13 +116,13 @@
           </div>
         </div>
         <div class="item">
-          <img src="./images/spaceit.jpg" alt="screenshot of space it app">
+          <img src="./images/projects/spaceit.jpg" alt="screenshot of space it app">
           <div class="align-with-image">
             <div class="project-title">
               <h3 class="project-title-header left-align zero-bottom-margin"><a
                   href="https://space-it.maman0022.vercel.app" target="_blank">spACE IT!</a></h3>
               <a href="https://github.com/maman0022/space-it-client" target="_blank"><img class="github-logo"
-                  src='./images/github.svg' alt="github logo with link that navigates to space it github page"></a>
+                  src='./images/projects/github.svg' alt="github logo with link that navigates to space it github page"></a>
             </div>
             <p>A full-stack french learning app that presents words using the spaced repetition revision
               technique.</p>

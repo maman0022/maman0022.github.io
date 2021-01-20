@@ -59,6 +59,12 @@ header h2 {
   background-color: transparent;
 }
 
+@media all and (min-width: 800px) {
+  header h2 {
+    font-size: 3vw;
+  }
+}
+
 header h2:hover {
   text-decoration: underline;
 }
@@ -72,14 +78,14 @@ header h2:hover {
 /* outer space --------------------------------------------------------------------------------------------*/
 
 #outer-space {
-  background: url('./images/background.jpg');
+  background: url('./images/outer-space/background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   height: 100vh;
 }
 
-#warning {
+#warning, #warning-2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 0.1em;
   font-size: 1em;
@@ -87,6 +93,10 @@ header h2:hover {
   margin-top: 1em;
   text-align: center;
   color: #ffffff;
+}
+
+#warning-2 {
+  margin-top: 0;
 }
 
 #spinner {
@@ -99,6 +109,15 @@ header h2:hover {
   height: 1em;
   animation: downarrow 1s linear infinite alternate;
   display: block;
+}
+
+@media all and (min-width: 800px) {
+  #warning, #warning-2 {
+    font-size: 1.5vw;
+  }
+  .downarrow {
+    height: 1.5vw;
+  }
 }
 
 @keyframes downarrow {
@@ -183,6 +202,30 @@ header h2:hover {
   margin: 1.1em auto;
 }
 
+.stack-image {
+  height: 5em;
+  padding: 1em;
+}
+
+#stack-container {
+  min-height: 5em;
+}
+
+@media all and (min-width: 800px) {
+  #about h2 {
+    font-size: 3vw;
+  }
+  #about p {
+    font-size: 1.5vw;
+  }
+  .stack-image {
+    height: 7.5vw;
+  }
+  #stack-container {
+    min-height: 7.5vw;
+  }
+}
+
 /* Projects ------------------------------------------------------------------------------------------------*/
 
 #projects {
@@ -228,6 +271,18 @@ header h2:hover {
   font-style: normal;
 }
 
+@media all and (min-width: 800px) {
+  #projects h2 {
+    font-size: 3vw;
+  }
+  #projects p, .tech-header, .project-title-header {
+    font-size: 1.5vw;
+  }
+  .github-logo {
+    height: 2.5vw;
+  }
+}
+
 /* Contact ------------------------------------------------------------------------------------------*/
 
 #contact {
@@ -262,4 +317,13 @@ form textarea, form input {
 form input[type=submit] {
   margin: 0.3em 0;
   display: block;
+}
+
+@media all and (min-width: 800px) {
+  #contact h2 {
+    font-size: 3vw;
+  }
+  #contact p, form label, li, form textarea, form input {
+    font-size: 1.5vw;
+  }
 }
