@@ -2,12 +2,8 @@
 <html lang="en">
 
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2V64YZ7B7T"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-2V64YZ7B7T');
+    fetch('https://damp-falls-25632.herokuapp.com/api/log', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ site: 'portfolio' }) })
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
